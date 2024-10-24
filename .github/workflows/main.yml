@@ -32,7 +32,4 @@ jobs:
       run: python bitcoin_etf_scraper.py
 
     - name: Run BTC Flows Coinglass
-      run: python btc_flows_coinglass.py
-
-    - name: Limitless
-      run: limitless.py  
+      run: python btc_flows_coinglass.py 
