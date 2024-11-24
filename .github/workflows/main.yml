@@ -21,6 +21,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install datetime requests==2.26.0 beautifulsoup4==4.10.0 cloudscraper selenium retrying
+        pip install web3==6.11.1 aiohttp==3.9.1 asyncio==3.4.3
 
     - name: Setup Chrome
       uses: browser-actions/setup-chrome@latest
@@ -36,3 +37,10 @@ jobs:
 
     - name: Run L2 Balances Nodes
       run: python l2ethbalances.py
+
+    - name: Commit and push if changes
+      run: |
+        git config --global user.name 'GitHub Action'
+        git config --global user.email 'action@github.com'
+        git add -A
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Update data $(date +'%Y-%m-%d')" && git push)
