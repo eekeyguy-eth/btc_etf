@@ -53,7 +53,7 @@ ADDRESSES = {
     'lambda chain': '0x7288e508f56c1b4b52D2e4Fd3688a711c7cE0054',
     'ethernity': '0xDA29f0B4da6c23f6c1aF273945c290C0268c4ea9',
     'hook': '0x6BC4F2698cd385a04ee0B1805D15E995c45476F6',
-    'kontos': '0xc08a7164F9E9d8aB66CcB67D49d6FB116b5808dD
+    'kontos': '0xc08a7164F9E9d8aB66CcB67D49d6FB116b5808dD'
 }
 
 async def get_balance_at_block(address: str, block_number: int) -> float:
