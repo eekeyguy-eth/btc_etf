@@ -32,4 +32,7 @@ jobs:
       run: python bitcoin_etf_scraper.py
 
     - name: Run BTC Flows Coinglass
-      run: python btc_flows_coinglass.py 
+      run: python btc_flows_coinglass.py
+
+    - name: Run L2 Balances Nodes
+      run: python l2ethbalances.py
