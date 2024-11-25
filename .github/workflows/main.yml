@@ -35,9 +35,6 @@ jobs:
     - name: Run BTC Flows Coinglass
       run: python btc_flows_coinglass.py
 
-    - name: Run L2 Balances Nodes
-      run: python l2ethbalances.py
-
     - name: Commit and push if changes
       run: |
         git config --global user.name 'GitHub Action'
