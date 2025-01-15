@@ -34,6 +34,9 @@ jobs:
 
     - name: Run BTC Flows Coinglass
       run: python btc_flows_coinglass.py
+      
+    - name: ETH Exported to L2
+      run: python ethexport.py
 
     - name: Commit and push if changes
       run: |
